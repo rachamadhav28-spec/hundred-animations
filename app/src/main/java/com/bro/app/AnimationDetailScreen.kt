@@ -79,8 +79,8 @@ fun AnimationDetailScreen(index: Int, onBack: () -> Unit) {
         Box(
             contentAlignment = Alignment.Center,
             modifier = Modifier
-                .weight(1f)
                 .fillMaxWidth()
+                .weight(1f, fill = true)
         ) {
             Box(
                 modifier = Modifier
