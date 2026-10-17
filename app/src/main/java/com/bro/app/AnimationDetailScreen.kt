@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.weight
@@ -77,8 +78,8 @@ fun AnimationDetailScreen(index: Int, onBack: () -> Unit) {
         Box(
             contentAlignment = Alignment.Center,
             modifier = Modifier
-                .fillMaxSize()
                 .weight(1f)
+                .fillMaxSize()
         ) {
             Box(
                 modifier = Modifier
@@ -90,7 +91,7 @@ fun AnimationDetailScreen(index: Int, onBack: () -> Unit) {
         Button(
             onClick = { animate = !animate },
             modifier = Modifier
-                .fillMaxSize()
+                .fillMaxWidth()
                 .padding(bottom = 24.dp),
             colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFBB86FC))
         ) {
