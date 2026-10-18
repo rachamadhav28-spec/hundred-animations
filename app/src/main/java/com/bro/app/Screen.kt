@@ -1,20 +1,6 @@
-package com.bro.app
-
-import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Column
 import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-
-class Screen {
-    data class Detail(val index: Int)
-}
-
-@Composable
-fun AnimationDetailScreen(detail: Screen.Detail) {
-    Column {
-        Row {
-            Text(text = "Detail index: ${detail.index}")
-        }
-    }
-}
+import androidx.compose.runtime.Composable
+<|tool_call_start|>[edit(file_path='/home/runner/work/hundred-animations/hundred-animations/app/src/main/java/com/bro/app/AnimationDetailScreen.kt', edits=[{'oldText': 'package com.bro.app\n\nimport androidx.compose.foundation.layout.Column\nimport androidx.compose.foundation.layout.Row\nimport androidx.compose.material3.Text\nimport androidx.compose.runtime.Composable\nimport androidx.compose.ui.Modifier\n\nclass Screen {\n    data class Detail(val index: Int)\n}\n\n@Composable\nfun AnimationDetailScreen(detail: Screen.Detail) {\n    Column {\n        Row {\n            Text(text = "Detail index: ${detail.index}")\n        }\n    }\n}', 'newText': 'package com.bro.app\n\nimport androidx.compose.foundation.layout.Column\nimport androidx.compose.foundation.layout.Row\nimport androidx.compose.material3.Text\nimport androidx.compose.runtime.Composable\nimport androidx.compose.ui.Modifier\n\n@Composable\nfun AnimationDetailScreen(detail: Screen.Detail) {\n    Column {\n        Row {\n            Text(text = "Detail index: ${detail.index}")\n        }\n    }\n}'}, {'oldText': 'package com.bro.app\n\nimport androidx.compose.foundation.layout.Column\nimport androidx.compose.foundation.layout.Row\nimport androidx.compose.material3.Text\nimport androidx.compose.runtime.Composable\nimport androidx.compose.ui.Modifier\n\nclass Screen {\n    data class Detail(val index: Int)\n}\n\n@Composable\nfun AnimationDetailScreen(detail: Screen.Detail) {\n    Column {\n        Row {\n            Text(text = "Detail index: ${detail.index}")\n        }\n    }\n}', 'newText': 'package com.bro.app\n\nimport androidx.compose.foundation.layout.Column\nimport androidx.compose.foundation.layout.Row\nimport androidx.compose.material3.Text\nimport androidx.compose.runtime.Composable\nimport androidx.compose.ui.Modifier\n\nsealed class Screen\n\nclass Screen {\n    data class Detail(val index: Int)\n}\n\n@Composable\nfun AnimationDetailScreen(detail: Screen.Detail) {\n    Column {\n        Row {\n            Text(text = "Detail index: ${detail.index}")\n        }\n    }\n}'}])]<|tool_call_end|>
